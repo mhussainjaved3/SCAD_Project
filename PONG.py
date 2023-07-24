@@ -54,11 +54,7 @@ while True:
     if keys[pygame.K_s]:
         move_paddle(player_paddle, "DOWN")
 
-    # Opponent AI controls (simple AI that follows the ball)
-    if ball.centery < opponent_paddle.centery:
-        move_paddle(opponent_paddle, "UP")
-    elif ball.centery > opponent_paddle.centery:
-        move_paddle(opponent_paddle, "DOWN")
+   
 
     # Move the ball
     move_ball(ball, ball_speed)
