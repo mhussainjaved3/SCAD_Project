@@ -67,7 +67,9 @@ while True:
     if ball.top <= 0 or ball.bottom >= HEIGHT:
         ball_speed[1] = -ball_speed[1]
 
-    
+    # Ball collision with paddles
+    if ball.colliderect(player_paddle) or ball.colliderect(opponent_paddle):
+        ball_speed[0] = -ball_speed[0]
 
     # Ball out of bounds (score points)
     if ball.left <= 0:
