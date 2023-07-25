@@ -4,12 +4,7 @@ import sys
 # Initialize pygame
 pygame.init()
 
-# Constants
-WIDTH, HEIGHT = 640, 480
-BALL_SPEED = 5
-PADDLE_SPEED = 5
-WHITE = (255, 255, 255)
-FPS = 60
+
 
 # Refactoring: Create a function to handle paddle movement
 def move_paddle(paddle, direction):
